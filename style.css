@@ -1,4 +1,8 @@
-   header {
+  body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+  header {
       background: #fff;
       border-bottom: 1px solid #e0e0e0;
       padding: 10px 5%;
@@ -100,8 +104,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
+  background-color: #e81f33;
 }
-
+.slide-content h2{
+    color: #fff;
+}
+.slide-content p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
 .left-content, .right-content {
   flex: 1 1 100%;
   max-width: 100%;
@@ -523,4 +535,11 @@ img.img-fluid {
       padding: 8px 14px;
       font-size: 14px;
     }
+  }
+
+  .plan-box a{
+ text-decoration: none;
+ color: #075EE8 !important;
+ font-size: 18px;
+ font-weight: 500;
   }
