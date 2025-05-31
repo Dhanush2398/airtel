@@ -1,0 +1,246 @@
+   header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .logo-mobile img {
+      height: 40px;
+    }
+
+    .logo-mobile {
+      position: absolute;
+      left: 45%;
+      transform: translateX(-50%);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      z-index: 10;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: red;
+      border-radius: 3px;
+    }
+
+    .person-icon i {
+      color: red;
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+        display: none;
+        border-top: 1px solid #eee;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .logo {
+        display: none !important;
+      }
+
+      .logo-mobile {
+        display: block;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .logo-mobile {
+        display: none !important;
+      }
+    }
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.left-content, .right-content {
+  flex: 1 1 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .left-content {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .right-content {
+    flex: 1;
+    max-width: 50%;
+  }
+}
+
+.right-content img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+}
+ 
+.swiper {
+  position: relative;
+}
+
+.custom-controls {
+  position: absolute;
+  bottom: 30px; 
+  left: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  z-index: 10;
+  padding: 6px 6px;
+  border-radius: 20px;
+}
+
+.custom-arrow {
+  background-color: #000;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.custom-pagination {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Responsive Card-style Table on Mobile */
+@media (max-width: 768px) {
+  .airtel-table thead {
+    display: none;
+  }
+
+  .airtel-table, 
+  .airtel-table tbody, 
+  .airtel-table tr, 
+  .airtel-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .airtel-table tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #e80000;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff5f5;
+  }
+
+  .airtel-table td {
+    text-align: left;
+    padding-left: 55%;
+    position: relative;
+    font-size: 0.95rem;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .airtel-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    top: 0.75rem;
+    font-weight: bold;
+    color: #e80000;
+    white-space: nowrap;
+  }
+}
+
+.airtel-offer-section {
+  background: #f9f9f9;
+}
+
+.offer-box {
+  background: #fff;
+  border-left: 6px solid #dc3545;
+}
+
+.offer-box h2 {
+  font-weight: 700;
+}
+
+.offer-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact-box a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+img.img-fluid {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .offer-list li {
+    font-size: 1rem;
+  }
+
+  .contact-box a {
+    font-size: 1rem;
+  }
+}
