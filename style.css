@@ -433,7 +433,6 @@ img.img-fluid {
 .mobile-contact-links a {
   display: block;
   margin-bottom: 10px;
-  color: #e80000;
   text-decoration: none;
   font-weight: 500;
 }
@@ -441,3 +440,87 @@ img.img-fluid {
 .mobile-contact-links a i {
   margin-right: 8px;
 }
+
+ .wifi-plans-section {
+    padding: 60px 20px;
+    background: #fff;
+    font-family: sans-serif;
+  }
+
+  .wifi-plans-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: red;
+  }
+.wifi-plans-section h6 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #222;
+  }
+
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .plan-box {
+    background-color: #ECEDFF;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    min-height: 180px;
+  }
+
+  .plan-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .plan-box p {
+    margin: 6px 0;
+    color: #333;
+  }
+
+  .select-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E3E5FF;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .select-btn:hover {
+    background-color: #d3d5ff;
+  }
+
+
+  .plan-box.placeholder {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+
+  @media (max-width: 480px) {
+    .wifi-plans-section h2 {
+      font-size: 22px;
+    }
+
+    .plan-box {
+      padding: 16px;
+    }
+
+    .select-btn {
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+  }
