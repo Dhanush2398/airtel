@@ -127,6 +127,11 @@
   max-height: 450px;
   object-fit: contain;
 }
+@media (max-width: 768px) {
+  .right-content img {
+    margin-top: 20px; 
+  }
+}
  
 .swiper {
   position: relative;
@@ -164,7 +169,7 @@
   color: #000;
 }
 
-/* Responsive Card-style Table on Mobile */
+
 @media (max-width: 768px) {
   .airtel-table thead {
     display: none;
@@ -243,4 +248,140 @@ img.img-fluid {
   .contact-box a {
     font-size: 1rem;
   }
+}
+
+#navbar a i {
+  color: red;
+  font-size: 1.1rem;
+}
+
+#navbar a:hover {
+  color: #e80000; 
+}
+
+
+.modern-form {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 550px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  border: 2px solid #e80000;
+}
+
+.form-heading {
+  text-align: center;
+  color: #e80000;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-subheading {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #e80000;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #e80000;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 576px) {
+  .form-box {
+    padding: 1.5rem;
+  }
+}
+.quick-contact {
+  background: #f8f8f8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.quick-contact h2 {
+  color: #e80000;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.quick-contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quick-contact-box {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.quick-contact-box a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.quick-contact-box i {
+  color: #e80000;
+  font-size: 20px;
+}
+
+.quick-contact-box:hover {
+  transform: translateY(-3px);
 }
