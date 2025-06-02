@@ -542,4 +542,12 @@ img.img-fluid {
  color: #075EE8 !important;
  font-size: 18px;
  font-weight: 500;
-  }
+  }.popular-tag p a {
+	color: red;
+	font-size: 13px;
+}
+
+.popular-tag p {
+	font-size: 9px;
+	line-height: 22px;
+}
