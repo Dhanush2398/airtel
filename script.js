@@ -9,7 +9,7 @@
     const swiper = new Swiper(".mySwiper", {
       loop: true,
       autoplay: {
-        delay: 4000, 
+        delay: 10000, 
         disableOnInteraction: false,
       },
       pagination: {
