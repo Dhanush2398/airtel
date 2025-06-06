@@ -105,6 +105,7 @@
   flex-wrap: wrap;
   padding: 20px;
   background-color: #e81f33;
+  height: 500px;
 }
 .slide-content h2{
     color: #fff;
