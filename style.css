@@ -276,6 +276,7 @@ img.img-fluid {
   display: flex;
   justify-content: center;
   padding: 2rem 1rem;
+  background-color: #F8D7DA;
 }
 
 .form-box {
@@ -596,4 +597,28 @@ img.img-fluid {
   color: #000;
   text-align: center;
   line-height: 1.6;
+}
+
+
+    .btn-custom {
+      background-color: #E81F33 !important;
+      color: white !important;
+      border: none;
+    }
+
+    .btn-custom i {
+      margin-right: 6px;
+    }
+
+    .btn-custom:hover {
+      background-color: #E81F33 !important;
+    }
+
+  .icon-link {
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color:  #E81F33;
+  text-decoration: none;
 }
