@@ -626,3 +626,7 @@ img.img-fluid {
 .airtel-plans{
   background-color: #e9a0a6;
 }
+
+.airtel-plans p{
+  color: #000 !important;
+}
