@@ -734,7 +734,7 @@ img.img-fluid {
 }
 
 
-/* Popup Background */
+
 .airtel-popup {
   position: fixed;
   inset: 0;
@@ -745,7 +745,7 @@ img.img-fluid {
   z-index: 99999;
 }
 
-/* Popup Box */
+
 .airtel-popup-box {
   background: #fff;
   padding: 25px 20px;
