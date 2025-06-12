@@ -21,3 +21,5 @@ if (!empty($name) && !empty($phone)) {
 header("Location: thankyou.html");
 exit;
 ?>
+
+
