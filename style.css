@@ -431,11 +431,13 @@ img.img-fluid {
 
 .floating-buttons .whatsapp-btn {
   background-color: #25D366;
+  animation: zoomBlink 1.5s infinite;
 }
 .floating-buttons .call-btn {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  animation: zoomBlink 1.5s infinite;
 }
 .floating-buttons .whatsapp-btn:hover {
   background-color: #1da851;
@@ -743,7 +745,18 @@ img.img-fluid {
   transition: 0.3s;
   animation: zoomBlink 1.5s infinite;
 }
-
+.btn3{
+  background-color: #000;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.3s;
+}
 @keyframes zoomBlink {
   0% {
     transform: scale(1);

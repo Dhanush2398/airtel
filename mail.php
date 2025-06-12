@@ -5,7 +5,7 @@ $phone = $_POST['phone'] ?? '';
 $email = $_POST['email'] ?? '';
 $message = $_POST['message'] ?? '';
 
-$to = ""; 
+$to = "dth.net2025@gmail.com"; 
 
 
 $subject = "Airtel Connection Request from $name";
