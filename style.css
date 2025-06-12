@@ -764,7 +764,8 @@ img.img-fluid {
 }
 
 .call-btn:hover {
-  background-color: #b8001b;
+  background-color: #b8001b !important;
+   color: #fff !important;
 }
 
 .whatsapp-btn {
@@ -772,7 +773,8 @@ img.img-fluid {
 }
 
 .whatsapp-btn:hover {
-  background-color: #1da851;
+  background-color: #1da851 !important;
+  color: #fff !important;
 }
 
 .airtel-marquee-section {
