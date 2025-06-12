@@ -14,7 +14,7 @@
     }
 
     .logo img {
-      height: 60px;
+      height: 120px;
     }
 
     .logo-mobile img {
@@ -411,11 +411,11 @@ img.img-fluid {
 }
 
 .floating-buttons a {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: #e80000;
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -432,7 +432,11 @@ img.img-fluid {
 .floating-buttons .whatsapp-btn {
   background-color: #25D366;
 }
-
+.floating-buttons .call-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
 .floating-buttons .whatsapp-btn:hover {
   background-color: #1da851;
 }
@@ -694,9 +698,38 @@ img.img-fluid {
 
 .card-buttons {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
-
+.btn1 {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.3s;
+  background-color: #28a745 !important;
+}
+.btn1:hover{
+ background-color: #28a745 !important;
+}
+.btn2 {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.3s;
+  background-color: #E60023 !important;
+}
+.btn2:hover{
+ background-color: #E60023 !important;
+}
 .btn {
   flex: 1;
   display: inline-block;
@@ -708,6 +741,22 @@ img.img-fluid {
   font-size: 14px;
   color: #fff;
   transition: 0.3s;
+  animation: zoomBlink 1.5s infinite;
+}
+
+@keyframes zoomBlink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .call-btn {
@@ -855,6 +904,7 @@ img.img-fluid {
 }
 .call-btn {
   background: #e60000;
+  
 }
 .call-btn:hover {
   background: #c10000;
